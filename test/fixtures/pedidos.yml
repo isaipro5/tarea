@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_pedido: 1
+  dni: 1
+  fecha_pedido: 2024-11-01
+  total: 9.99
+
+two:
+  id_pedido: 1
+  dni: 1
+  fecha_pedido: 2024-11-01
+  total: 9.99

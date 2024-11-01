@@ -1,0 +1,32 @@
+<%= form_with(model: detalle_pedido) do |form| %>
+  <% if detalle_pedido.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(detalle_pedido.errors.count, "error") %> prohibited this detalle_pedido from being saved:</h2>
+
+      <ul>
+        <% detalle_pedido.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :id_detalle, style: "display: block" %>
+    <%= form.number_field :id_detalle %>
+  </div>
+
+  <div>
+    <%= form.label :id_pedido, style: "display: block" %>
+    <%= form.number_field :id_pedido %>
+  </div>
+
+  <div>
+    <%= form.label :id_producto, style: "display: block" %>
+    <%= form.number_field :id_producto %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

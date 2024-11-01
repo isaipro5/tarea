@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @detalle_pedido %>
+
+<div>
+  <%= link_to "Edit this detalle pedido", edit_detalle_pedido_path(@detalle_pedido) %> |
+  <%= link_to "Back to detalle pedidos", detalle_pedidos_path %>
+
+  <%= button_to "Destroy this detalle pedido", @detalle_pedido, method: :delete %>
+</div>

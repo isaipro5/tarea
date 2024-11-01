@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_oferta: 1
+  id_producto: 1
+  fecha: 2024-11-01
+
+two:
+  id_oferta: 1
+  id_producto: 1
+  fecha: 2024-11-01

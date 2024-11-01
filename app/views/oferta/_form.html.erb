@@ -1,0 +1,32 @@
+<%= form_with(model: ofertum) do |form| %>
+  <% if ofertum.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ofertum.errors.count, "error") %> prohibited this ofertum from being saved:</h2>
+
+      <ul>
+        <% ofertum.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :id_oferta, style: "display: block" %>
+    <%= form.number_field :id_oferta %>
+  </div>
+
+  <div>
+    <%= form.label :id_producto, style: "display: block" %>
+    <%= form.number_field :id_producto %>
+  </div>
+
+  <div>
+    <%= form.label :fecha, style: "display: block" %>
+    <%= form.date_field :fecha %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

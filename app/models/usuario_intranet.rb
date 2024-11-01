@@ -1,0 +1,2 @@
+class UsuarioIntranet < ApplicationRecord
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @usuario_intranet %>
+
+<div>
+  <%= link_to "Edit this usuario intranet", edit_usuario_intranet_path(@usuario_intranet) %> |
+  <%= link_to "Back to usuario intranets", usuario_intranets_path %>
+
+  <%= button_to "Destroy this usuario intranet", @usuario_intranet, method: :delete %>
+</div>

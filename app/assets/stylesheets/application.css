@@ -1,0 +1,123 @@
+/*
+ * Este archivo contiene estilos mejorados para la aplicación, aplicados a las tablas y formularios.
+ */
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    background-color: #f9f6ef; /* Color de fondo suave beige */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin: 20px 0; /* Margen superior e inferior */
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    text-align: left; /* Alineación a la izquierda */
+    border: 2px solid #c2b49c; /* Borde beige oscuro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px; /* Esquinas redondeadas */
+    overflow: hidden; /* Esquinas redondeadas en la sombra */
+}
+
+/* Encabezados de la tabla */
+th, td {
+    padding: 15px; /* Espaciado interno */
+    border-bottom: 1px solid #e4d6c7; /* Borde inferior gris claro */
+}
+
+/* Fondo de los encabezados */
+th {
+    background-color: #d5c3a1; /* Beige oscuro */
+    color: #3a2a1a; /* Texto marrón oscuro */
+    font-weight: bold; /* Negrita */
+}
+
+/* Filas alternas */
+tr:nth-child(even) {
+    background-color: #f0eae4; /* Beige claro */
+}
+
+/* Efecto hover en las filas */
+tr:hover {
+    background-color: #e6d7c2; /* Beige medio al pasar el mouse */
+}
+
+/* Estilo para las celdas */
+td {
+    background-color: #ffffff; /* Fondo blanco */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+/* Efecto de sombra para las celdas */
+td:hover {
+    background-color: #f9e3d3; /* Fondo beige claro al pasar el mouse */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Diseño adicional para la tabla */
+caption {
+    font-size: 1.8em; /* Tamaño de fuente grande */
+    margin: 10px 0; /* Espaciado */
+    color: #3a2a1a; /* Color marrón oscuro */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #e6d7c2; /* Fondo beige claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado externo */
+    border: 2px solid #c2b49c; /* Borde beige oscuro */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: border 0.3s; /* Transición suave para el borde */
+}
+
+/* Efecto de enfoque en los campos de entrada */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #8b5a2b; /* Borde marrón oscuro al enfocarse */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #8b5a2b; /* Marrón oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+button:hover {
+    background-color: #6f4c3e; /* Marrón más oscuro al pasar el mouse */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+}

@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Usuario intranets" %>
+
+<h1>Usuario intranets</h1>
+
+<div id="usuario_intranets">
+  <% @usuario_intranets.each do |usuario_intranet| %>
+    <%= render usuario_intranet %>
+    <p>
+      <%= link_to "Show this usuario intranet", usuario_intranet %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New usuario intranet", new_usuario_intranet_path %>
